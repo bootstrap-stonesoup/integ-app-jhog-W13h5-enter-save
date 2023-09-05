@@ -1,0 +1,20 @@
+apiVersion: apps/v1
+kind: Deployment
+metadata:
+  creationTimestamp: null
+  name: devfile-sample-python-basic-sekf
+spec:
+  selector: {}
+  strategy: {}
+  template:
+    metadata:
+      creationTimestamp: null
+    spec:
+      containers:
+      - env:
+        - name: var_name
+          value: test
+        image: quay.io/bootstrap/integration-e2e-tenant/integ-app-jhog/devfile-sample-python-basic-sekf@sha256:d072e4402816028b9c84826b790d0b6fea4baa0efc3723c4888c520bb08a6776
+        name: my-python
+        resources: {}
+status: {}
